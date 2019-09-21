@@ -1,0 +1,70 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verification of search functionality",
+        "description": "",
+        "id": "google-search-functionality;verification-of-search-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23024887600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the Chrome browser and launch the google url",
+            "match": {
+              "location": "stepDef.i_open_the_Chrome_browser_and_launch_the_google_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4203208200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter some text in search box",
+            "match": {
+              "location": "stepDef.i_enter_some_text_in_search_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3199531800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I hit return key",
+            "match": {
+              "location": "stepDef.i_hit_return_key()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4403444100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "google should display search results",
+            "match": {
+              "location": "stepDef.google_should_display_search_results()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google Search Functionality",
+    "description": "",
+    "id": "google-search-functionality",
+    "keyword": "Feature",
+    "uri": "Testscenario.feature"
+  }
+]

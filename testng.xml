@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test Automation TestNG Local Suite" thread-count="5" parallel="classes">
+    <test name="Chrome Test on Local">
+        <parameter name="browserName" value="chrome" />
+        <classes>
+            <class name="com.gmail.test.Testscript_03" />
+        </classes>
+    </test>
+
+    <test name="IE Test on Local">
+        <parameter name="browserName" value="ie" />
+        <classes>
+            <class name="com.gmail.test.Testscript_03" />
+        </classes>
+    </test>
+</suite>
