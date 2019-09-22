@@ -39,15 +39,14 @@ public class Testscript_01 {
         7. xpath
         */
 
+        // Creating explicit wait reference variable which can hold selenium commands until specified condition is fulfilled.
+        // Selenium will wait for 15 seconds before throwing exception.
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.elementToBeClickable(By.name("firstName")));
 
-        //Find element using className
-        driver.findElement(By.name("firstName")).sendKeys("seleniumDemo");
-
         //Find element using name
+        driver.findElement(By.name("firstName")).sendKeys("seleniumDemo");
         driver.findElement(By.name("lastName")).sendKeys("User123");
-
         driver.findElement(By.name("Username")).clear();
         driver.findElement(By.name("Username")).sendKeys("userSelenium1");
         driver.findElement(By.name("Passwd")).sendKeys("Password1234#");
