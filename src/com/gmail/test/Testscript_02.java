@@ -15,7 +15,7 @@ public class Testscript_02 {
 
     public static WebDriver driver;
     public static final String USERNAME = "bhaveshshah9";
-    public static final String AUTOMATE_KEY = "qC6rmQyaSsdyEXPogb6q";
+    public static final String AUTOMATE_KEY = "qC6rmQyaSsdyEXPogb7q";
     public static final String remoteURL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
     @Test

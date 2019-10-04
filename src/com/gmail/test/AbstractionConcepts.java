@@ -23,6 +23,7 @@ class test implements AbstractionConcepts {
         a.m1();
         a.m2();
 
+
         // Creating reference variable 't' of test class which will point to object of test class.
         // The reference variable 't' can access the methods which are present inside interface implemented by
         // test class and also the methods which are created by test class itself.
