@@ -1,13 +1,24 @@
 package com.selenium.training.topics;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-public class T01_FirstSeleniumWebDriverScript {
+public class T08_takeScreenshot {
 
-    public static void main(String[] args){
+    static WebDriver driver;
+
+    public static void main(String[] args)  throws Exception {
+        Date currentDate = new Date();
+        SimpleDateFormat ft = new SimpleDateFormat("yyyyMMdd_hhmmss");
+        ft.format(currentDate);
         System.setProperty("webdriver.chrome.driver", "C:/selenium server standalone/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         String baseUrl = "https://www.facebook.com/";
         String expectedTitle = "Facebook – log in or sign up";
@@ -21,6 +32,8 @@ public class T01_FirstSeleniumWebDriverScript {
         } else {
             System.out.println("Test Failed");
         }
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(src, new File("C:\\screenshots\\"+ ft.format(currentDate) + ".png"));
         driver.close();
     }
 }
