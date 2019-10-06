@@ -1,3 +1,4 @@
+@GoogleSearch
 Feature: Google Search Functionality
 
 Scenario: Verification of search functionality

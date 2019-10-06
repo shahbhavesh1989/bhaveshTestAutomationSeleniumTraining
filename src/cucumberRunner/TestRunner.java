@@ -12,8 +12,9 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber/reportJSON.json",
                 "html:target/cucumber/reportHTML.html",
                 "pretty"},
-        monochrome = true,
-        dryRun = false
+        monochrome = false,
+        dryRun = false,
+        tags = {"~@Smoke, ~@Regression", "~@GoogleSearch"}
 )
 
 public class TestRunner {

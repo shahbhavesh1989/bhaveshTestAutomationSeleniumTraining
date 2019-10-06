@@ -3,6 +3,100 @@
     "line": 1,
     "elements": [
       {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "id": "tagged-scenarios;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1026834500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "This is smoke only tag test",
+            "match": {
+              "location": "TagsStepDef.this_is_smoke_only_tag_test()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "",
+        "description": "",
+        "id": "tagged-scenarios;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5219900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "This is e2e only tag test",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 9
+                }
+              ],
+              "location": "TagsStepDef.this_is_e_e_only_tag_test(int)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@E2E"
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "",
+        "description": "",
+        "id": "tagged-scenarios;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1367700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "This is test having no tag",
+            "match": {
+              "location": "TagsStepDef.this_is_test_having_no_tag()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Tagged scenarios",
+    "description": "",
+    "id": "tagged-scenarios",
+    "keyword": "Feature",
+    "uri": "TaggedScenario.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
         "line": 3,
         "name": "Verification of search functionality",
         "description": "",
@@ -12,7 +106,7 @@
         "steps": [
           {
             "result": {
-              "duration": 23024887600,
+              "duration": 106323442000,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +118,7 @@
           },
           {
             "result": {
-              "duration": 4203208200,
+              "duration": 14165234100,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +130,7 @@
           },
           {
             "result": {
-              "duration": 3199531800,
+              "duration": 10794977400,
               "status": "passed"
             },
             "line": 6,
@@ -48,7 +142,7 @@
           },
           {
             "result": {
-              "duration": 4403444100,
+              "duration": 4772592600,
               "status": "passed"
             },
             "line": 7,
