@@ -7,6 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author Bhavesh Shah
+ */
+
 public class T03_WebElement_findElements {
 
     public static void main(String[] args) throws Exception {

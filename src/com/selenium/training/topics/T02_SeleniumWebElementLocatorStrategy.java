@@ -5,6 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author Bhavesh Shah
+ */
+
 public class T02_SeleniumWebElementLocatorStrategy {
 
     public static void main(String[] args) throws Exception {

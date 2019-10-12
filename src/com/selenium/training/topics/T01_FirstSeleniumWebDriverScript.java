@@ -3,6 +3,10 @@ package com.selenium.training.topics;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+/**
+ * @author Bhavesh Shah
+ */
+
 public class T01_FirstSeleniumWebDriverScript {
 
     public static void main(String[] args){

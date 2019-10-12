@@ -1,4 +1,4 @@
-package com.gmail.test;
+package com.selenium.training.topics;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,14 +6,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Testscript_01 {
+/**
+ * @author Bhavesh Shah
+ */
+
+public class Selenium_Test_01 {
 
     public static void main(String[] args) throws Exception {
         //Path to browser specific driver executable file.
         System.setProperty("webdriver.chrome.driver", "C:/selenium server standalone/chromedriver.exe");
 
         /*
-        Creating a reference variable "driver" for WebDriver interface and casting it to ChromeDriver.
+        Creating a reference variable "driver" of WebDriver interface and pointing it to ChromeDriver.
         This driver will be able to send selenium commands (Selenese) to your browser specific driver which will then
         send a request to your browser on local machine and perform the specified action.
         */
@@ -44,7 +48,7 @@ public class Testscript_01 {
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.elementToBeClickable(By.name("firstName")));
 
-        //Find element using name
+        //Find element
         driver.findElement(By.name("firstName")).sendKeys("seleniumDemo");
         driver.findElement(By.name("lastName")).sendKeys("User123");
         driver.findElement(By.name("Username")).clear();
