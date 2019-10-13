@@ -20,6 +20,8 @@ public class T01_FirstSeleniumWebDriverScript {
         driver.get(baseUrl);
         actualTitle = driver.getTitle();
 
+        // Do not use == in if clause condition as code won't work properly. Reason being  == checks if both objects point 
+        // to the same memory location whereas contentEquals() compares the String with the String Buffer and returns a boolean value.
         if (actualTitle.contentEquals(expectedTitle)){
             System.out.println("Test Passed!");
         } else {
