@@ -1,4 +1,4 @@
-package com.selenium.training.topics;
+package com.seleniumTraining.topics;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
