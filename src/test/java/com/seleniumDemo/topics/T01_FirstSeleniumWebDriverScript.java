@@ -1,4 +1,4 @@
-package com.seleniumTraining.topics;
+package com.seleniumDemo.topics;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

@@ -1,4 +1,4 @@
-package cucumberRunner;
+package com.seleniumDemo.runner;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/Features/MyFirstCucumberFeatureFile.feature"},
 
         //specify the path to your step definitions package where the selenium code will be found for the scenario test statements.
-        glue = {"stepDefinitions"},
+        glue = {"com.seleniumDemo.stepDefinitions"},
 
         //If set true, will display console output in much more readable format.
         monochrome = true,
