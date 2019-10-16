@@ -1,6 +1,7 @@
 package com.seleniumDemo.stepDefinitions;
 
 import cucumber.api.java.After;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -18,9 +19,15 @@ public class stepDefs {
 	WebDriver driver;
 	GoogleSignUpPageObjects pg ;
 
+/*
+WebDriverManager class helps to remove the pre-requisite step (i.e.) System.setProperty where we specify the path to
+respective browser drivers executable files.
+*/
+
 	@Given("^I launch chrome browser$")
 	public void i_launch_chrome_browser() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "C:/selenium server standalone/chromedriver.exe");
+	//	System.setProperty("webdriver.chrome.driver", "C:/selenium server standalone/chromedriver.exe");
+		WebDriverManager.chromedriver().arch32().setup();
 		driver = new ChromeDriver();
 	}
 

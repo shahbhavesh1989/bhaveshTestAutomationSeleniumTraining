@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions (
-		features = "src/test/resources/Features",
+		features = "src/test/resources/Features/MyTestScenario.feature",
 		glue = "com.seleniumDemo.stepDefinitions",
 		plugin = {
 				"json:target/cucumber-reports/json-report.json",
